@@ -99,7 +99,7 @@ class CharacterModel extends Model<CharacterAttributes> implements CharacterAttr
     }
 
     const characters = await this.findAll({ where: filters });
-    await setCache(cacheKey, JSON.stringify(characters), 3600); // Cache for 1 hour
+    await setCache(cacheKey, JSON.stringify(characters), 3600);
 
     return characters;
   }
