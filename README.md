@@ -81,3 +81,14 @@ SELECT id, name, status, species, gender, origin FROM "Characters" LIMIT 15;
 ```
 
 If you get stuck at any step, feel free to reach out to me via vittory.dev@gmail.com or by creating an issue.
+
+## ERD Diagram
+
+| Field   | Type   | Description                  |
+| ------- | ------ | ---------------------------- |
+| id      | PK     | Unique Identifier            |
+| name    | string | Character name               |
+| status  | string | State (Alive/Dead/unknown)   |
+| species | string | Specie (Human/Alien)         |
+| gender  | string | Gender (Male/Female/unknown) |
+| origin  | string | Origin                       |
