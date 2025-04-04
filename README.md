@@ -80,6 +80,19 @@ sudo -u postgres psql
 SELECT id, name, status, species, gender, origin FROM "Characters" LIMIT 15;
 ```
 
+## Make a Query
+
+You can test the GraphQL API in Postman by sending a POST request to: `http://localhost:{your-port-in-env-file}/graphql`
+with this query body:
+
+```sh
+{
+  "query": "{ characters { id name status species } }"
+}
+```
+
+This will return the 15 characters from your database.
+
 If you get stuck at any step, feel free to reach out to me via vittory.dev@gmail.com or by creating an issue.
 
 ## ERD Diagram
